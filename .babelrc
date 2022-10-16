@@ -1,0 +1,23 @@
+// Use this:
+// import ABCXYZ from '~/ABCXYZ';
+// Instead of that:
+// import ABCXYZ from '../../../../ABCXYZ';
+
+// And it also work with require calls
+// Use this:
+// const ABCXYZ = require('~/ABCXYZ');
+// Instead of that:
+// const ABCXYZ = require('../../../../ABCXYZ');
+
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~": "./src"
+        }
+      }
+    ]
+  ]
+}
